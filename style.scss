@@ -14,6 +14,10 @@
   box-shadow:0 0 15px 5px #ccc;
 }
 
+.alert.hide{
+  display: none;
+}
+
 .alert h3{
   font-size: 14px;
 }
