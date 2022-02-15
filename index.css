@@ -191,7 +191,7 @@ ul{
 
 .product-card .card-content .product-brand{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   color: #282c3f;
   margin-bottom: 6px;
@@ -234,7 +234,7 @@ ul{
 .product-card .card-content .product-price .product-discountedPrice{
   font-size: 14px;
   color: #282c3f;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .product-card .card-content .product-price .product-strike{
@@ -300,15 +300,48 @@ ul{
 
 .product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-brand{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   color: #282c3f;
   text-align: left;
   margin: 0;
 }
 .product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-title{
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 4px 0 8px;
+  color: #535766;
+  font-size: 14px;
+  text-decoration: none;
 }
-.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing{}
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing .product-item-selling-price{
+  color: #282c3f;
+  padding: 0 3px 0 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing .product-item-mrp{
+  text-decoration: line-through;
+  color: #282c3f;
+  padding: 0 3px;
+  opacity: .7;
+  font-size: 12px;
+}
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing .product-item-discount{
+  color: #ff905a;
+  padding: 0 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 @media(max-width: 1400px){
   .product-list-gist{
