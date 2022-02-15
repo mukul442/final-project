@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --color-logo-primary: #00796b;
+  --color-logo-secondary: #00796b;
+  --color-btn-primary: #00897b;
+  --color-btn-hover-primary: #4db6ac;
+
+  --color-text-primary: #212121;
+
+  --color-input-default: #9e9e9e;
+}
+
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+img{
+  border-style: none;
+}
+
+a{
+  color: #282c3f;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+/* LOGO */
+
+.logo{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-logo-primary);
+  cursor: pointer; 
+}
+
+.logo::after{
+  content: '.com';
+  color: var(--color-logo-secondary);
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* BUTTON */
+
+.btn{
+  text-transform: capitalize;
+  background-color: var(--color-btn-primary);  ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover{
+  background-color: white;
+  color: var(--color-btn-primary);
+  border: 2px solid var(--color-btn-hover-primary); 
+}
+
+/* FORM CONTROL */
+
+.form-control{
+  margin: 40px 0;
+  width: 200px;
+}
+
+.form-control .form-label{
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-control .form-input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-input-default);
+  color: var(--color-text-primary);
+  outline: none;
+}
+
+.form-control .form-input:focus{
+  border: 1px solid var(--color-btn-primary);
+}
+
+/* SELECTED */
+
+.form-control .form-input option{
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+
+/* CHECKBOX */
+.form-control input[type="checkbox"]:checked{
+  color: var(--color-btn-primary);
+  font-size: 40px;
+}
+
+
+/* RESULTS */
+
+.results-base{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  margin: 0 -10px 0 3px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+  width: 210px;
+  text-align: left;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 10px 30px;
+}
+
+.product-card:hover{
+  box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 7%);
+}
+
+.product-card .product-thumbShim{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 210px;
+  background-color: #282c3f;
+  transition: visibility 0s, opacity .5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.product-card a{
+  text-decoration: none;
+  display: block;
+  height: max-content;
+}
+
+/* .product-card .card-image{
+  height: 280px;
+  width: 100%;
+}
+
+.product-card .card-image img{
+  width: 100%;
+  display: block;
+} */
+
+.product .product-imageSliderContainer{
+  position: relative;
+  width: 210px;
+  height: 280px;
+}
+
+.product .product-imageSliderContainer .product-sliderContainer{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card .card-content{
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  padding: 0 10px;
+  height: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-card .card-content .product-brand{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card .card-content .product-brand h3{
+  margin-top: inherit;
+  margin-block-start: 0;
+}
+
+.product-card .card-content .product-desc{
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+
+.product-card .card-content .product-desc h4{
+  padding-left: 0;
+}
+
+.product-card .card-content .product-price{
+  line-height: 15px;
+  margin: 10px 0 6px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 500;
+}
+
+.product-card .card-content .product-price .product-discountedPrice{
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 500;
+}
+
+.product-card .card-content .product-price .product-strike{
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.product-card .card-content .product-price .product-discountPercentage{
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
