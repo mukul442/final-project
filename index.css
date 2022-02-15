@@ -21,6 +21,7 @@ img{
 
 a{
   color: #282c3f;
+  background: transparent;
 }
 
 ul{
@@ -249,4 +250,68 @@ ul{
   font-weight: 400;
   font-size: 12px;
   margin-left: 5px;
+}
+
+
+/* SECOND PRODUCT CARD */
+
+.product-list-gist{
+  padding-bottom: 14px;
+  flex: 1 0 190px;
+  box-sizing: border-box;
+  margin-left: 40px;
+  margin-top: 40px;
+  outline: 1px solid #e9e9eb;
+}
+
+.product-list-gist .product-list-link{
+  text-decoration: none;
+  outline: 0;
+}
+
+.product-list-gist .product-list-link .product-item-container{
+  margin: 0;
+}
+
+.product-list-gist .product-list-link .product-item-container .product-item-imageCtr{
+  height: 0;
+  padding-top: 133.33333333333331%;
+  overflow: hidden;
+  position: relative;
+  background-color: #eaeaec;
+  border-bottom: 1px solid #e9e9eb;
+}
+
+.product-list-gist .product-list-link .product-item-container .product-item-imageCtr .product-item-image{
+  max-width: 100%;
+  height: auto;
+  background-color: #f5f5f6;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-brand{
+  font-size: 16px;
+  font-weight: 500;
+  color: #282c3f;
+  text-align: left;
+  margin: 0;
+}
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-title{
+  width: 100%;
+}
+.product-list-gist .product-list-link .product-item-container .product-item-metaContainer .product-item-pricing{}
+
+@media(max-width: 1400px){
+  .product-list-gist{
+    max-width: calc(20% - 40px);
+  }
 }
